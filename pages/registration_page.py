@@ -32,11 +32,7 @@ class RegistrationPage(BasePage):
         )
         assert page_message.text == 'Thank you for registering with Main Website Store.'
 
-    def data_verification(self,
-                          fname,
-                          lname,
-                          email,
-                          ):
+    def data_verification(self, fname, lname, email):
         info_akk = self.find(loc.info_loc)
         assert fname, lname and email in info_akk.text
 

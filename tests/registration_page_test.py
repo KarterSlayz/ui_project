@@ -6,8 +6,10 @@ email = 'r112lgtrhrefwefe@gmail.com'
 passwd = 'fkewhfukfhue2131JIJIH'
 confpasswd = 'fkewhfukfhue2131JIJIH'
 min_len_passwd = '1'
-len_text_passwd = \
-    'Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored.'
+len_text_passwd = (
+    'Minimum length of this field must be equal or greater than 8 symbols. '
+    'Leading and trailing spaces will be ignored.'
+)
 similar_characters_password = '11111111'
 similar_text = (
     'Minimum of different classes of characters in password is 3. '
