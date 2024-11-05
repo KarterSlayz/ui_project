@@ -1,4 +1,5 @@
 import pytest
+sort_by = 'price'
 
 
 @pytest.mark.smoke
@@ -16,6 +17,7 @@ def test_switching_page(eco_page):
 
 
 @pytest.mark.sorted_items
-def test_sorted_items_by_price(eco_page):
+def test_sort_item(eco_page):
     eco_page.open_page()
-    eco_page.sorted_items_in_page_by_price()
+    eco_page.sort_item(sort_by)
+    eco_page.check_valid_sorted()
