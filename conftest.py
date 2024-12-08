@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from pages.registration_page import RegistrationPage
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.edge.options import Options
 from pages.eco_page import EcoPage
 from pages.sale_page import SalePage
 
@@ -10,7 +10,7 @@ from pages.sale_page import SalePage
 def driver():
     options = Options()
     options.add_argument('--headless')
-    edge_driver = webdriver.Chrome(options=options)
+    edge_driver = webdriver.Edge(options=options)
     edge_driver.maximize_window()
     return edge_driver
 
