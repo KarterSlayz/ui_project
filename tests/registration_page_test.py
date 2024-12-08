@@ -2,7 +2,7 @@ import pytest
 
 fname = 'Ryan'
 lname = 'Gosling'
-email = 'r11wq2l21gtrhrefwefe@gmail.com'
+email = 'r11wq12l21gtrhrefwefe@gmail.com'
 passwd = 'fkewhfukfhue2131JIJIH'
 confpasswd = 'fkewhfukfhue2131JIJIH'
 min_len_passwd = '1'
