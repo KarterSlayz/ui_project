@@ -9,10 +9,6 @@ jobs:
     steps:
       - name: Checkout autotests
         uses: action/checkout@v4
-        with:
-          permissions:
-            packages: write
-            contents: read
       - name: Set up Python environment
         uses: actions/setup-python@v5
         with:
