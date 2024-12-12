@@ -1,5 +1,9 @@
 name: Python autotests
 
+permissions:
+  contents: read
+  packages: write
+
 on: [push]
 
 jobs:
