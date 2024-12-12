@@ -31,26 +31,26 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run all tests
-        if: "github.event.inputs.deployment_targer == 'all'"
+        if: "github.event.inputs.deployment_target == 'all'"
         run: pytest
       - name: Run smoke tests
-        if: "github.event.inputs.deployment_targer == 'smoke'"
+        if: "github.event.inputs.deployment_target == 'smoke'"
         run: pytest -m smoke
       - name: Run switching_page tests
-        if: "github.event.inputs.deployment_targer == 'switching_page'"
+        if: "github.event.inputs.deployment_target == 'switching_page'"
         run: pytest -m switching_page
       - name: Run sorted_items tests
-        if: "github.event.inputs.deployment_targer == 'sorted_items'"
+        if: "github.event.inputs.deployment_target == 'sorted_items'"
         run: pytest -m sorted_items
       - name: Run rules_passwd tests
-        if: "github.event.inputs.deployment_targer == 'rules_passwd'"
+        if: "github.event.inputs.deployment_target == 'rules_passwd'"
         run: pytest -m rules_passwd
       - name: Run message_empty_field tests
-        if: "github.event.inputs.deployment_targer == 'message_empty_field'"
+        if: "github.event.inputs.deployment_target == 'message_empty_field'"
         run: pytest -m message_empty_field
       - name: Run button_to_women_sale tests
-        if: "github.event.inputs.deployment_targer == 'button_to_women_sale'"
+        if: "github.event.inputs.deployment_target == 'button_to_women_sale'"
         run: pytest -m button_to_women_sale
       - name: Run sale_off tests
-        if: "github.event.inputs.deployment_targer == 'sale_off'"
+        if: "github.event.inputs.deployment_target == 'sale_off'"
         run: pytest -m sale_off
