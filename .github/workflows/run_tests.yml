@@ -1,9 +1,5 @@
 name: Python autotests
 
-permissions:
-  id-token: write
-  contents: read
-  
 on: [push]
 
 jobs:
